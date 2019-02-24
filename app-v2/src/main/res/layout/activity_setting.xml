@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.yan.valkyrietool.v2.widget.CustomToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:showBackIcon="true"
+        app:title="设置" >
+
+        <include layout="@layout/layout_loading"/>
+    </com.yan.valkyrietool.v2.widget.CustomToolbar>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/tv_personal_characters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@mipmap/ic_right"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="定制角色池"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_check_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@mipmap/ic_right"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="检查更新"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:text="当前版本"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:textSize="16sp"
+                    tools:text="1.0.0" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

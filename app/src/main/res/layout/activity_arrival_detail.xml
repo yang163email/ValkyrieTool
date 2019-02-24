@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <com.yan.valkyrietool.v2.widget.CustomToolbar
+        android:id="@+id/toolbar"
+        app:showBackIcon="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                tools:src="@mipmap/ic_launcher" />
+
+            <LinearLayout
+                android:id="@+id/ll_star_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/c_69b3c8"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="名称"
+                    android:textColor="@color/c_ffffff" />
+
+                <TextView
+                    android:id="@+id/tv_full_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="2"
+                    android:background="@color/c_eeeeee"
+                    android:padding="5dp"
+                    android:textSize="13sp"
+                    tools:text="xxx" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/c_69b3c8"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="类型"
+                    android:textColor="@color/c_ffffff" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="2"
+                    android:background="@color/c_eeeeee"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:src="@mipmap/ic_launcher">
+
+                    <ImageView
+                        android:id="@+id/iv_site"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        tools:src="@mipmap/ic_launcher" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/c_69b3c8"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="主动技能"
+                    android:textColor="@color/c_ffffff" />
+
+                <TextView
+                    android:id="@+id/tv_active_skill"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="2"
+                    android:background="@color/c_eeeeee"
+                    android:lineSpacingMultiplier="1.2"
+                    android:padding="5dp"
+                    android:textSize="13sp"
+                    tools:text="xxx" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/c_69b3c8"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="自动技能"
+                    android:textColor="@color/c_ffffff" />
+
+                <TextView
+                    android:id="@+id/tv_auto_skill"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="2"
+                    android:background="@color/c_eeeeee"
+                    android:lineSpacingMultiplier="1.2"
+                    android:padding="5dp"
+                    android:textSize="13sp"
+                    tools:text="xxx" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_other_header1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <View
+                    android:id="@+id/top_circle1"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/shape_blue_circle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/top_circle1"
+                    android:text="其它敌人"
+                    android:textColor="#fff" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_other_avatar1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        tools:src="@mipmap/ic_launcher" />
+
+                    <TextView
+                        android:id="@+id/tv_other_short_name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        tools:text="魔之水晶[木]" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_other_avatar2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        tools:src="@mipmap/ic_launcher" />
+
+                    <TextView
+                        android:id="@+id/tv_other_short_name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        tools:text="魔之水晶[木]" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp">
+
+                <com.yan.valkyrietool.widget.ResistanceView
+                    android:id="@+id/other_resistance_view1"
+                    android:layout_width="0dp"
+                    android:layout_height="160dp"
+                    android:layout_weight="1"
+                    app:rbvTextSize="12sp" />
+
+                <com.yan.valkyrietool.widget.ResistanceView
+                    android:id="@+id/other_resistance_view2"
+                    android:layout_width="0dp"
+                    android:layout_height="160dp"
+                    android:layout_weight="1"
+                    app:rbvTextSize="12sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_other_header2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <View
+                    android:id="@+id/top_circle2"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/shape_blue_circle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/top_circle2"
+                    android:text="其它敌人(技能情报)"
+                    android:textColor="#fff" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="2dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/c_eeeeee"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/iv_other_avatar11"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        tools:src="@mipmap/ic_launcher" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_other_full_name1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:background="@color/c_eeeeee"
+                        android:padding="5dp"
+                        android:textSize="13sp"
+                        tools:text="xxx" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/c_eeeeee"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:src="@mipmap/ic_launcher">
+
+                        <ImageView
+                            android:id="@+id/iv_other_site1"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            tools:src="@mipmap/ic_launcher" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_other_desc1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/c_eeeeee"
+                        android:lineSpacingMultiplier="1.2"
+                        android:padding="5dp"
+                        android:textSize="13sp"
+                        tools:text="xxx" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="2dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/c_eeeeee"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/iv_other_avatar21"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        tools:src="@mipmap/ic_launcher" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_other_full_name2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:background="@color/c_eeeeee"
+                        android:padding="5dp"
+                        android:textSize="13sp"
+                        tools:text="xxx" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/c_eeeeee"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:src="@mipmap/ic_launcher">
+
+                        <ImageView
+                            android:id="@+id/iv_other_site2"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            tools:src="@mipmap/ic_launcher" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_other_desc2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/c_eeeeee"
+                        android:lineSpacingMultiplier="1.2"
+                        android:padding="5dp"
+                        android:textSize="13sp"
+                        tools:text="xxx" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_property_header3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <View
+                    android:id="@+id/top_circle3"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/shape_blue_circle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/top_circle3"
+                    android:text="属性耐性"
+                    android:textColor="#fff" />
+            </RelativeLayout>
+
+            <com.yan.valkyrietool.widget.ResistanceView
+                android:id="@+id/resistance_view"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:rbvTextOffset="6dp" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
